@@ -1,0 +1,82 @@
+{% extends "base.html" %} {% block title %}Sample{% endblock %} 
+{% block content %}
+
+        <!-- Begin Page Content -->
+        <div style="text-align: center;" class="container-fluid">
+          <img style="width: 40%;" src="{{ url_for('static', filename='img/record/' + base_data + '') }}" alt="" srcset="">
+        </div>
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Comparison</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="printIframe('printed_windows')"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+
+          <!-- Content Row -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- DataTales Example -->
+              <div class="table-responsive">
+                <table id="myTable" class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Location</th>
+                      <th>Date</th>
+                      <th>Object Number</th>
+                      <th>Scores</th>
+                      <th>Snapshot</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for i in data %}
+                    <tr>
+                      {% if i[0] == '101' %}
+                      <td>Lift Gerbang Barat</td>
+                      {% elif i[0] == '201'  %}
+                      <td>Selasar Gerbang Barat</td>
+                      {% elif i[0] == '301'  %}
+                      <td>Selasar Lab KCKS</td>
+                      {% elif i[0] == '1101'  %}
+                      <td>Lab KCKS Belakang</td>
+                      {% endif %}
+                      <td>{{ i[1] }}</td>
+                      <td>{{ i[2] }}</td>
+                      <td>{{ i[4] }}</td>
+                      <!-- <td><img style="width: 40%;" src="../record/{{ i[3] }}" alt=""></td> -->
+                      <td style="text-align: center;"><img style="width: 50%;" src="{{ url_for('static', filename='img/record/' + i[3] + '') }}" alt=""></td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        <!-- /.container-fluid -->
+          
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+    <!-- Page level plugins -->
+    <script src="{{ url_for('static', filename='vendor/chart.js/Chart.min.js')}}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{ url_for('static', filename='js/demo/chart-area-demo.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/demo/chart-pie-demo.js')}}"></script>
+    <script>
+      $(document).ready( function () {
+        $.fn.dataTable.moment('DD/MM/YYYY HH:mm:SS');
+        $('#myTable').DataTable({
+          "order": [[3, "asc"]]
+        });
+    } );
+    </script>
+{% endblock %}
