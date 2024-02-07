@@ -3,4 +3,5 @@
 *.pt
 
 # ignore ALL files in ANY directory named temp
-static/img/record/
+static/img/record*
+footage/

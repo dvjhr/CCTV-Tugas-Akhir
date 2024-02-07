@@ -65,6 +65,8 @@ def detail(base_path):
         if score_res < 0.00001:
             print(score_res, "0.0")
             score_res = 0.0
+        if score_res < 0.5:
+            final_result.append((data[0], score_res))
         final_result.append((data[0], score_res))
     for ids, scores in final_result:
         get_data_sql = sql.SQL("SELECT path from face_data where id = %s")
