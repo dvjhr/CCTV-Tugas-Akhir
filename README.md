@@ -23,12 +23,8 @@ python sbadmin2.py
 ```
 
 # Author 
-Dava Aditya Jauhar
-
-05311940000030
-
-Information Tehcnology Department
-
-Faculty of Intelligence Electrical and Informatics Technology
-
-Sepuluh Nopember Institute of Technology
+Dava Aditya Jauhar\
+05311940000030\
+Information Technology Department\
+Faculty of Intelligence Electrical and Informatics Technology\
+Sepuluh Nopember Institute of Technology\
