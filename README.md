@@ -38,4 +38,4 @@ Dava Aditya Jauhar\
 05311940000030\
 Information Technology Department\
 Faculty of Intelligence Electrical and Informatics Technology\
-Sepuluh Nopember Institute of Technology\
+Sepuluh Nopember Institute of Technology
