@@ -4,7 +4,7 @@ This repository contains program from my simple undergraduate thesis
 
 # Requirement
 Following requirement is required:
-## PostgreSQL Database
+- PostgreSQL Database
 Create a new table named "face_data" to contain result from [notebook](https://github.com/dvjhr/CCTV-Tugas-Akhir/blob/master/insightface_reborn.ipynb)
 ```
 CREATE TABLE face_data (
@@ -13,7 +13,7 @@ CREATE TABLE face_data (
     embedding DOUBLE PRECISION[]
 );
 ```
-## Python Libraries
+- Python Libraries
 *Note that this only instal dependencies for website deployment, refer to notebook for more information regarding notebook's dependencies 
 ```
 flask
