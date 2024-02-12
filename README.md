@@ -30,7 +30,7 @@ pip install requirements.txt
 ```
 git clone https://github.com/dvjhr/CCTV-Tugas-Akhir.git
 cd CCTV-Tugas-Akhir
-python sbadmin2.py
+python server.py
 ```
 
 # Author 
