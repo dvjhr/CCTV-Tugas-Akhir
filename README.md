@@ -13,8 +13,8 @@ CREATE TABLE face_data (
     embedding DOUBLE PRECISION[]
 );
 ```
-- Python Libraries
-*Note that this only instal dependencies for website deployment, refer to notebook for more information regarding notebook's dependencies 
+- Python Libraries\
+*Note that this only install dependencies for website deployment, refer to notebook library import for more information regarding notebook's dependencies 
 ```
 flask
 numpy
