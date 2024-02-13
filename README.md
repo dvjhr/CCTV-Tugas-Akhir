@@ -4,9 +4,13 @@ This repository contains program from my simple undergraduate thesis
 
 # Requirement
 Following requirement is required:
-- PostgreSQL Database\
-Download from its [official site](https://www.postgresql.org/)\
-Create a new table named "face_data" to contain result from [notebook](https://github.com/dvjhr/CCTV-Tugas-Akhir/blob/master/insightface_reborn.ipynb)
+1) PostgreSQL Database
+- Download from its [official site](https://www.postgresql.org/)
+- Create new database for example: 
+```
+CREATE DATABASE tugas_akhir WITH ENCODING 'UTF8' LC_COLLATE='English_United Kingdom' LC_CTYPE='English_United Kingdom';
+```
+- Create a new table named "face_data" to contain result from [notebook](https://github.com/dvjhr/CCTV-Tugas-Akhir/blob/master/insightface_reborn.ipynb)
 ```
 CREATE TABLE face_data (
     id SERIAL PRIMARY KEY,
@@ -14,7 +18,7 @@ CREATE TABLE face_data (
     embedding DOUBLE PRECISION[]
 );
 ```
-- Python Libraries\
+2) Python Libraries\
 *Note that this only install dependencies for website deployment, refer to notebook library import for more information regarding notebook's dependencies 
 ```
 flask

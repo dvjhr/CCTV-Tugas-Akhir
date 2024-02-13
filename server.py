@@ -5,6 +5,7 @@ import jinja2.exceptions
 import psycopg2
 from psycopg2 import sql
 
+# define connection to database
 connection_params = {
     'host': 'localhost',
     'database': 'tugas_akhir',
