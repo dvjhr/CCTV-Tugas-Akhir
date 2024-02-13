@@ -4,7 +4,8 @@ This repository contains program from my simple undergraduate thesis
 
 # Requirement
 Following requirement is required:
-- PostgreSQL Database
+- PostgreSQL Database\
+Download from its [official site](https://www.postgresql.org/)\
 Create a new table named "face_data" to contain result from [notebook](https://github.com/dvjhr/CCTV-Tugas-Akhir/blob/master/insightface_reborn.ipynb)
 ```
 CREATE TABLE face_data (
