@@ -1,6 +1,4 @@
-#!/usr/bin/env python
 from flask import Flask, render_template, request, redirect, url_for, session
-from werkzeug.security import generate_password_hash, check_password_hash
 # from pymongo import MongoClient
 import jinja2.exceptions
 
