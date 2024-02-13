@@ -1,6 +1,6 @@
 # Automatic People Detection and Tracking System Through CCTV using Face Recognition on Information Technology Department
 
-This repository contains program from my simple undergraduate thesis
+This repository contains program from my simple undergraduate thesis dashboard, go to [here](https://github.com/dvjhr/CCTV-Tugas-Akhir-Model) for model's code
 
 # Requirement
 Following requirement is required:
@@ -19,7 +19,6 @@ CREATE TABLE face_data (
 );
 ```
 2) Python Libraries\
-*Note that this only install dependencies for website deployment, refer to notebook library import for more information regarding notebook's dependencies 
 ```
 flask
 numpy
